@@ -1,0 +1,163 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - SEETHARAMAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <h1SEETHARAMAN S<span>computer science student
+            </span></h1>
+            <button id="toggleMode">🌙</button>
+        </header>
+        <div class="top-section">
+            <div class="contact-info">
+                <p><strong>📞 Phone:</strong>6382752226</p>
+                <p><strong>📧 Mail:</strong> SEETHAX07@GMAIL.COM</p>
+                <p><strong>📍 Address:</strong> Lakshmi Mills,
+                Amman Kulam St,
+                Coimbatore.</p>
+            </div>
+            <div class="profile-pic">
+                <img src="profile.jpg" alt="Profile Picture">
+            </div>
+        </div>
+        <section>
+            <h2>🎯 OBJECTIVE</h2>
+            <p>Motivated and detail-oriented Computer Science student seeking a summer internship to leverage programming skills and gain hands-on experience in software development. Passionate about technology and eager to contribute to innovative projects.</p>
+        </section>
+        <section>
+            <h2>📚 Education</h2>
+            <ul>
+                <li></li>
+                <li>KSG COLLEGE OF ARTS AND SCIENCE</li>
+                <li>BACHELOR OF COMPUTER SCIENCE (B.sc.,cs)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>💡 Skills</h2>
+            <ul>
+                <li>Adobe Photoshop</li>
+                <li>MS Office</li>
+                <li>Fast Typing</li>
+            </ul>
+        </section>
+        <section>
+            <h2>🌍 Languages</h2>
+            <ul>
+                <li>Tamil</li>
+                <li>English</li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        const toggleButton = document.getElementById('toggleMode');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            toggleButton.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html><style>/* Default Light Mode */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.resume-container {
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h1 span {
+    display: block;
+    font-size: 24px;
+    font-weight: normal;
+    color: #555;
+}
+
+#toggleMode {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    font-size: 16px;
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #555;
+}
+
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: #f4f4f4;
+}
+
+.dark-mode .resume-container {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode h2 {
+    border-bottom: 2px solid #999;
+}
+
+.dark-mode .profile-pic img {
+    border: 3px solid #fff;
+}</style>
